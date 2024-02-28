@@ -1,30 +1,30 @@
 import React from "react";
-import { BsArrowUp, BsArrowUpRight } from "react-icons/bs";
+import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 const services = [
   {
-    name: "UI/UX Design ",
+    name: "Web App Development",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, cum. Nostrum molestias.",
+      "Developing web applications with frameworks such as React.js, implementing robust state management for complex applications, and seamlessly integrating with backend services and APIs.",
     link: "Learn more",
   },
   {
-    name: "Development",
+    name: "User Interface (UI) Design",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, cum. Nostrum molestias.",
+      "Specialize in designing visually appealing and user-friendly interfaces, creating wireframes and prototypes, and implementing design principles to enhance the overall user experience.",
     link: "Learn more",
   },
   {
-    name: "Digital Marketing ",
+    name: "Website Development",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, cum. Nostrum molestias.",
+      "Create the structure and layout of web pages, implement responsive design for mobile and tablet devices, and build interactive and dynamic user interfaces",
     link: "Learn more",
   },
   {
-    name: "Product Branding  ",
+    name: "Frontend Frameworks",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, cum. Nostrum molestias.",
+      "Working with popular frontend frameworks and libraries while also utilizing component-based architecture for modular development.",
     link: "Learn more",
   },
 ];
@@ -45,7 +45,13 @@ const Services = () => {
             <h3 className='h3 max-w-[455px] mb-16'>
               I am Front-end React Developer with over 2 years of experience
             </h3>
-            <button className='btn btn-sm'> See my work</button>
+            <a
+              href='https://github.com/yhujae'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <button className='btn btn-sm'>See my work</button>
+            </a>
           </motion.div>
           <motion.div
             variants={fadeIn("left", 0.5)}

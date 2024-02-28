@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import Img1 from "../assets/portfolio-img1.png";
-import Img2 from "../assets/portfolio-img2.png";
-import Img3 from "../assets/portfolio-img3.png";
+import Img1 from "../assets/todo.jpg";
+import Img2 from "../assets/fashion.jpg";
+import Img3 from "../assets/portfolio.jpg";
 const Work = () => {
   return (
     <section className='section' id='work'>
@@ -17,7 +17,7 @@ const Work = () => {
             className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'
           >
             <div>
-              <h2 className='h2 leading-tight text-warning/80'>
+              <h2 className='h2 leading-tight text-warning/80 mt-[60px]'>
                 My Latest <br />
                 work
               </h2>
@@ -26,7 +26,13 @@ const Work = () => {
                 and seamless functionality. Explore the art of innovation
                 through my projects."
               </p>
-              <button className='btn btn-sm'>View all project</button>
+              <a
+                href='https://github.com/yhujae'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <button className='btn btn-sm'>View all projects</button>
+              </a>
             </div>
             {/* image */}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
@@ -40,11 +46,11 @@ const Work = () => {
               />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'> UI/UX Design</span>
+                <span className='text-gradient'> Front-End Development</span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-3xl text-white'>Todo App</span>
               </div>
             </div>
           </motion.div>
@@ -62,16 +68,16 @@ const Work = () => {
               {/* img */}
               <img
                 className='group-hover:scale-125 transition-all duration-500'
-                src={Img2}
+                src={Img3}
                 alt=''
               />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'> UI/UX Design</span>
+                <span className='text-gradient'> Front-End Development</span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-3xl text-white'>React Portfolio</span>
               </div>
             </div>
             {/* image */}
@@ -81,16 +87,16 @@ const Work = () => {
               {/* img */}
               <img
                 className='group-hover:scale-125 transition-all duration-400'
-                src={Img3}
+                src={Img2}
                 alt=''
               />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'> UI/UX Design</span>
+                <span className='text-gradient'> Front-End Development</span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50 '>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-3xl text-white'>Landing Page</span>
               </div>
             </div>
           </motion.div>

@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "../assets/profile5.png";
-import { FaDribbble, FaGithub, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 const Banner = () => {
   return (
     <section
@@ -12,6 +13,16 @@ const Banner = () => {
     >
       <div className='container mx-auto'>
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center'>
+          <motion.div
+            variants={fadeIn("down", 0.5)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[550px] mx-auto  bg-top'
+          >
+            {" "}
+            <img src={Image} alt='' />
+          </motion.div>
           <div className='flex-1 text-center font-secondary lg:text-left'>
             <motion.h1
               variants={fadeIn("up", 0.4)}
@@ -64,10 +75,12 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
             >
-              <button className='btn btn-lg'>Contact me</button>
-              <a href='#' className='text-gradient btn-link'>
-                My Portfolio
-              </a>
+              <Link to='contact'>
+                <button className='btn btn-lg'>Contact me</button>
+              </Link>
+              <Link to='work' className='text-gradient btn-link cursor-pointer'>
+                <a>My Portfolio</a>
+              </Link>
             </motion.div>
             <div>
               <motion.div
@@ -77,28 +90,23 @@ const Banner = () => {
                 viewport={{ once: false, amount: 0.7 }}
                 className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
               >
-                <a href='#'>
-                  <FaYoutube />
-                </a>
-                <a href='#'>
+                <a
+                  href='https://github.com/yhujae'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   <FaGithub />
                 </a>
-                <a href='#'>
-                  <FaDribbble />
+                <a
+                  href='https://www.linkedin.com/in/precious-roberts-404a37254'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <FaLinkedinIn />
                 </a>
               </motion.div>
             </div>
           </div>
-          <motion.div
-            variants={fadeIn("down", 0.5)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[550px] mx-auto  bg-top'
-          >
-            {" "}
-            <img src={Image} alt='' />
-          </motion.div>
         </div>
       </div>
     </section>
